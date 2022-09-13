@@ -37,21 +37,19 @@
 
 // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
-int i = 2;
-Console.WriteLine("Введите число:");
-int num = Convert.ToInt32(Console.ReadLine());
+//===================================================================================
+// # 8 Напишите программу, которая на вход принимает число (N), а на
+// выходе показывает все чётные числа от 1 до N.
+//===================================================================================
 
-Console.WriteLine("Чётные числа от 1 до " + num);
-if (num < 2)
+string? inputLine = Console.ReadLine();
+if (inputLine != null)
 {
-    Console.WriteLine("Нет чётных чисел!");
-}
-else
-{
-    while (i <= num - 2)
+    int inputNumber = int.Parse(inputLine);
+    int countNumber = 2;
+    while (countNumber <= inputNumber)
     {
-        Console.Write(i + ", ");
-        i += 2;
+        Console.Write(countNumber+" ");
+        countNumber += 2;
     }
-    Console.Write(i);
 }
