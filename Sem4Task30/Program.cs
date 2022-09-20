@@ -35,7 +35,7 @@ PrintArr(array);
 
 PrintArr(GenArr(ReadData("Введите число ")));
 
-Math.Abs();
+//Math.Abs();
 
 
 
