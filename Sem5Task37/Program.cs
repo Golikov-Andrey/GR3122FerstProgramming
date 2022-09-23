@@ -172,9 +172,6 @@ void TimeTest(Func<int[], int[]> Method, int[] arr, string funcName)
 
 
 int[] arr = GenArr(100000, 0, 5000000);
-//PrintArr(arr);
 Console.WriteLine($"Минимальный элемент массива: {arr.Min()}\nМаксимальный элемент массива: {arr.Max()}");
-//PrintArr(InsertSort((int[])arr.Clone()), "Массив сортированный методом вставки: ");
-//PrintArr(CountSort((int[])arr.Clone()), "Массив сортированный методом подсчета: ");
 TimeTest(InsertSort, (int[])arr.Clone(), "InsertSort");
 TimeTest(CountSort, (int[])arr.Clone(), "CountSort");
